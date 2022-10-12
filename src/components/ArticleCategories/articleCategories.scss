@@ -1,14 +1,14 @@
 .Article-categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  // grid-template-rows: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 188px);
+  grid-template-rows: repeat(6, 204px);
   column-gap: 56px;
   height: 100%;
   position: absolute;
-  right: 48px;
-  top: 56px;
+  right: 0;
+  top: 0;
   padding: 0 40px;
+  z-index: 1;
 
   .grey-section,
   .orange-section,
@@ -21,6 +21,7 @@
 
     img {
       max-width: 200px;
+      height: auto;
       align-self: center;
     }
 
@@ -54,7 +55,7 @@
   .grey-border {
     position: relative;
     grid-area: 1 / 1 / 4 / 2;
-    border-right: 2px solid rgba(204, 204, 204, 0.5);
+    border-right: 2px solid #CCCCCC;
   }
 
   .grey-border:after {
@@ -64,8 +65,8 @@
     bottom: 100px;
     font-weight: bold;
     width: 8px;
-    height: 62px;
-    background-color: rgba(204, 204, 204, 0.5);
+    height: 72px;
+    background-color: #CCCCCC;
   }
 
   /*** ORANGE ***/
@@ -77,7 +78,7 @@
   .orange-border {
     position: relative;
     grid-area: 1 / 2 / 3 / 3;
-    border-right: 2px solid rgba(239, 198, 175, 0.5);
+    border-right: 2px solid #EFC6B0;
   }
 
   .orange-border:after {
@@ -87,8 +88,8 @@
     bottom: 174px;
     font-weight: bold;
     width: 8px;
-    height: 62px;
-    background-color: rgba(239, 198, 175, 0.5);
+    height: 72px;
+    background-color: #EFC6B0;
   }
 
   /*** BLUE ***/
@@ -100,17 +101,53 @@
   .blue-border {
     position: relative;
     grid-area: 5 / 3 / 7 / 4;
-    border-right: 2px solid rgba(223, 231, 243, 0.5);
+    border-right: 2px solid #DFE7F3;
   }
 
   .blue-border:after {
     content: "";
     position: absolute;
     right: 0;
-    top: 74px;
+    top: 64px;
     font-weight: bold;
     width: 8px;
-    height: 62px;
-    background-color: rgba(223, 231, 243, 0.636);
+    height: 72px;
+    background-color: #DFE7F3;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Article-categories {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    column-gap: 0;
+
+    .grey-section,
+    .orange-section,
+    .blue-section {
+      width: 30%;
+    }
+
+    .grey-border,
+    .orange-border,
+    .blue-border {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Article-categories {
+    flex-direction: column;
+    gap: 40px;
+
+    .grey-section,
+    .orange-section,
+    .blue-section {
+      width: 100%;
+    }
   }
 }

@@ -6,8 +6,8 @@
 }
 
 .Hero-text {
-  width: 45%;
   gap: 148px;
+  z-index: 5;
 
   .up-section {
     gap: 56px;
@@ -45,11 +45,14 @@
   .scroll-down-section {
     display: flex;
     align-items: center;
-    padding-left: 16px;
+    gap: 8px;
+    padding-left: 40px;
 
     div:first-child {
       font-size: .7rem;
-      transform: rotate(-90deg);
+      transform: rotate(180deg);
+      text-orientation: mixed;
+      writing-mode: vertical-lr;
     }
 
     .mouse {
@@ -68,6 +71,14 @@
       height: 20px;
       top: 8px;
       left: 10.8px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .Hero-text {
+    .scroll-down-section {
+      display: none;
     }
   }
 }

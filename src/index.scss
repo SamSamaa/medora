@@ -68,13 +68,19 @@ h6 {
   overflow-wrap: break-word;
 }
 
-ul[role='list'],
-ol[role='list'],
-li {
+ul,
+ol {
   list-style: none;
+  padding: 0;
 }
 
 #root {
   isolation: isolate;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
 }

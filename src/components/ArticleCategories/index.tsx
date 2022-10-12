@@ -10,7 +10,7 @@ const ArticleCategories = () => {
       <div className='grey-section'>
         <img src={GreyChair} alt='grey chair with a yellow pillow' />
         <div>
-          <span>03.</span>
+          <span>00.</span>
           <h2>Cosy Modern Chair</h2>
           <p>Lorem ipsum dolor sit amet, consectetur elit<br />sed do eiusmod tempor incididunt</p>
         </div>

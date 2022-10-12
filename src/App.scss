@@ -6,14 +6,14 @@
   min-height: 100%;
   background-color: #FFF9F6;
   padding: 48px;
-  box-shadow: 0px 1px 6px 0px
+  box-shadow: 0px 1px 6px 0px rgb(222 222 222 / 75%);
 }
 
-.App::after {
+.App:after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 74px;
+  left: -8px;
+  top: 88px;
   font-weight: bold;
   width: 8px;
   height: 96px;
