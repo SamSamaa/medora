@@ -1,8 +1,8 @@
 import Navbar from './components/Navbar';
 import HeroText from './components/HeroText';
+import ArticlCategories from './components/ArticleCategories';
 
 import './App.scss';
-import ArticlCategories from './components/ArticleCategories';
 
 const App = () => {
   return (

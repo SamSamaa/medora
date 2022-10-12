@@ -2,8 +2,20 @@
   display: flex;
   flex-direction: column;
   gap: 120px;
+  position: relative;
   min-height: 100%;
   background-color: #FFF9F6;
   padding: 48px;
-  box-shadow: 0px 1px 6px 0px rgba(222, 222, 222, 0.75);
+  box-shadow: 0px 1px 6px 0px
+}
+
+.App::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 74px;
+  font-weight: bold;
+  width: 8px;
+  height: 96px;
+  background-color: #DA925D;
 }
