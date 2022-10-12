@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Metropolitano';
+  src: local('Metropolitano'), url('./fonts/Metropolitano/Metropolitano-Light.ttf') format('truetype'),
+    url('./fonts/Metropolitano/Metropolitano-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Metropolitano';
+  font-weight: bold;
+  src: local('Metropolitano'), url('./fonts/Metropolitano/Metropolitano-Bold.ttf') format('truetype'),
+    url('./fonts/Metropolitano/Metropolitano-Bold.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Metropolitano';
+  font-weight: 100;
+  src: local('Metropolitano'), url('./fonts/Metropolitano/Metropolitano-Thin.ttf') format('truetype'),
+    url('./fonts/Metropolitano/Metropolitano-Thin.woff') format('truetype');
+}
+
 *,
 *::before,
 *::after {
@@ -17,6 +37,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: #F4EAE4;
+  font-family: 'Metropolitano', Arial, sans-serif;
+  padding: 56px 48px;
 }
 
 img,
@@ -46,10 +69,12 @@ h6 {
 }
 
 ul[role='list'],
-ol[role='list'] {
+ol[role='list'],
+li {
   list-style: none;
 }
 
 #root {
   isolation: isolate;
+  height: 100%;
 }
