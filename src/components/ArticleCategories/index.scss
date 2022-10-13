@@ -49,13 +49,13 @@
   /*** GREY ***/
   .grey-section {
     grid-area: 4 / 1 / 7 / 2;
-    background-color: #CCCCCC;
+    background-color: var(--color-grey);
   }
 
   .grey-border {
     position: relative;
     grid-area: 1 / 1 / 4 / 2;
-    border-right: 2px solid #CCCCCC;
+    border-right: 2px solid var(--color-grey);
   }
 
   .grey-border:after {
@@ -66,19 +66,19 @@
     font-weight: bold;
     width: 8px;
     height: 72px;
-    background-color: #CCCCCC;
+    background-color: var(--color-grey);
   }
 
   /*** ORANGE ***/
   .orange-section {
     grid-area: 3 / 2 / 6 / 3;
-    background-color: #EFC6B0;
+    background-color: var(--color-orange);
   }
 
   .orange-border {
     position: relative;
     grid-area: 1 / 2 / 3 / 3;
-    border-right: 2px solid #EFC6B0;
+    border-right: 2px solid var(--color-orange);
   }
 
   .orange-border:after {
@@ -89,19 +89,19 @@
     font-weight: bold;
     width: 8px;
     height: 72px;
-    background-color: #EFC6B0;
+    background-color: var(--color-orange);
   }
 
   /*** BLUE ***/
   .blue-section {
     grid-area: 2 / 3 / 5 / 4;
-    background-color: #DFE7F3;
+    background-color: var(--color-blue);
   }
 
   .blue-border {
     position: relative;
     grid-area: 5 / 3 / 7 / 4;
-    border-right: 2px solid #DFE7F3;
+    border-right: 2px solid var(--color-blue);
   }
 
   .blue-border:after {
@@ -112,7 +112,7 @@
     font-weight: bold;
     width: 8px;
     height: 72px;
-    background-color: #DFE7F3;
+    background-color: var(--color-blue);
   }
 }
 
