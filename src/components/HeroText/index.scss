@@ -1,0 +1,45 @@
+.Hero-text,
+.up-section,
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero-text {
+  width: fit-content;
+  gap: 148px;
+  z-index: 5;
+
+  .up-section {
+    gap: 56px;
+
+    .title {
+      gap: 28px;
+
+      h1 {
+        font-weight: 100;
+        font-size: 3rem;
+        line-height: 1.1;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      p {
+        font-size: 1.3rem;
+        font-weight: 100;
+      }
+    }
+
+    button {
+      max-width: fit-content;
+      border: none;
+      border-radius: 40px;
+      padding: 12px 32px;
+      color: white;
+      background-color: #eb7e2b;
+      cursor: pointer;
+    }
+  }
+}

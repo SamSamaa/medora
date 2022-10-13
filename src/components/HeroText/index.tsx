@@ -1,29 +1,26 @@
-import './heroText.scss';
+import ScrollDown from '../ScrollDown';
 
-const HeroText = () => {
-  return (
-    <div className='Hero-text'>
-      <div className='up-section'>
-        <div className='title'>
-          <h1>
-            Mid Century
-            <br />
-            <span>Modern Furniture</span>
-          </h1>
-          <p>
-            Modern high quality and comfortable
-            <br />
-            available on our stores
-          </p>
-        </div>
-        <button type='button'>Discover Now</button>
+import './index.scss';
+
+const HeroText = () => (
+  <div className='Hero-text'>
+    <div className='up-section'>
+      <div className='title'>
+        <h1>
+          Mid Century
+          <br />
+          <span>Modern Furniture</span>
+        </h1>
+        <p>
+          Modern high quality and comfortable
+          <br />
+          available on our stores
+        </p>
       </div>
-      <div className='scroll-down-section'>
-        <div>Scroll Down</div>
-        <div className='mouse'></div>
-      </div>
+      <button type='button'>Discover Now</button>
     </div>
-  )
-}
+    <ScrollDown />
+  </div>
+)
 
 export default HeroText;

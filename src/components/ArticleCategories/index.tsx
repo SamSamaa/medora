@@ -2,10 +2,9 @@ import OrangeChair from '../../assets/orange-chair.png';
 import GreyChair from '../../assets/grey-chair.png';
 import Lampe from '../../assets/lampe.png';
 
-import './articleCategories.scss';
+import './index.scss';
 
-const ArticleCategories = () => {
-  return (
+const ArticleCategories = () => (
     <div className='Article-categories'>
       <div className='grey-section'>
         <img src={GreyChair} alt='grey chair with a yellow pillow' />
@@ -38,6 +37,5 @@ const ArticleCategories = () => {
       <div className='blue-border' />
     </div>
   )
-}
 
 export default ArticleCategories;

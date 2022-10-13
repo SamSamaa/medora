@@ -4,14 +4,12 @@ import ArticlCategories from './components/ArticleCategories';
 
 import './App.scss';
 
-const App = () => {
-  return (
-    <div className='App'>
-      <Navbar />
-      <HeroText />
-      <ArticlCategories />
-    </div>
-  )
-}
+const App = () => (
+  <div className='App'>
+    <Navbar />
+    <HeroText />
+    <ArticlCategories />
+  </div>
+)
 
 export default App;
