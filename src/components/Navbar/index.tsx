@@ -11,7 +11,9 @@ const Navbar = () => {
 				<li>Furniture</li>
 				<li>Our Stores</li>
 				<li>Blog</li>
-				<li className='profile-picture'><img src={ProfilePicture} alt='users profile picture' /></li>
+				<li className='profile-picture'>
+					<img src={ProfilePicture} alt='users profile picture' />
+				</li>
 			</ul>
 		</nav>
 	)
