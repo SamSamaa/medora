@@ -19,7 +19,7 @@
     border-radius: 30px;
   }
 
-  .mouse:after {
+  .mouse::after {
     content: "|";
     position: absolute;
     font-weight: bold;
