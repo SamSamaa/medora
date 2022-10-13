@@ -17,7 +17,7 @@
     flex-direction: column;
     gap: 54px;
     padding: 40px 20px;
-    box-shadow: 0px 1px 6px 0px #DEDEDE;
+    box-shadow: 0px 1px 6px 0px var(--color-shadows);
 
     img {
       max-width: 200px;
@@ -58,7 +58,7 @@
     border-right: 2px solid var(--color-grey);
   }
 
-  .grey-border:after {
+  .grey-border::after {
     content: "";
     position: absolute;
     right: 0;
@@ -81,7 +81,7 @@
     border-right: 2px solid var(--color-orange);
   }
 
-  .orange-border:after {
+  .orange-border::after {
     content: "";
     position: absolute;
     right: 0;
@@ -104,7 +104,7 @@
     border-right: 2px solid var(--color-blue);
   }
 
-  .blue-border:after {
+  .blue-border::after {
     content: "";
     position: absolute;
     right: 0;
